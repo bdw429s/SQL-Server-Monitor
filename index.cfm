@@ -12,7 +12,7 @@
 <cfparam name="session.last_refresh" default="#now()#">
 <cfparam name="session.last_spid_cpu" default="#structnew()#">
 
-<cfparam name="session.server" default="ais-bi-sql-1">
+<cfparam name="session.server" default="your_DSN_name">
 <cfif isdefined("url.server") and len(trim(url.server))>
 	<cfset session.server = url.server>
 </cfif>

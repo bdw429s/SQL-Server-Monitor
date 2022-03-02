@@ -6,7 +6,8 @@ This is a super old SQL Server monitor tool I wrote back around 2007 to monitor 
 
 * Start up a server in this folder as the web root
 * Add a datasource for a Sql Server using a SQL Login with the `sysadmin` server role (this is required)
-* Edit the dropdown around line 200 of `index.cfm` to set the name of your DSN to the options
+* Edit the dropdown around line 200 of `index.cfm` to set the name of your DSN to the options (You can have more than one DSN to monitor different servers)
+* Put the default DNS name in the `CFParam` around line 15 of `index.cfm` 
 * Hit the site and you can see all the running processes on the DB server
 * All the SeeFusion stuff is super old and doesn't do anything if you don't use SeeFusion
 * The logged in user stuff all depends on SeeFusion, so it's probably worthless to you
